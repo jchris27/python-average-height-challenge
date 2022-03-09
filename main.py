@@ -9,14 +9,15 @@ for n in range(0, len(student_heights)):
 
 # 156 178 165 171 187 = 857
 # output = 171.4 
-height = 0
+total_height = 0
 number_of_students = 0
-for student in student_heights:
- 
-  height += student
+for height in student_heights:
+ # total_height = total_height(previous value) + height
+  total_height += height # similar as above
   number_of_students += 1
+print(round(total_height/number_of_students))
 
-print(round(height/number_of_students))
-
-
-
+# number_of_students = 0
+# for student in student_heights:
+#   number_of_students += 1
+# print(number_of_students)
