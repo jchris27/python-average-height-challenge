@@ -7,11 +7,16 @@ for n in range(0, len(student_heights)):
 
 #Write your code below this row 👇
 
+# 156 178 165 171 187 = 857
+# output = 171.4 
+height = 0
+number_of_students = 0
 for student in student_heights:
-  total_students = student + student
-  average_student = (total_students + student) / n
-print(round(average_student))
+ 
+  height += student
+  number_of_students += 1
 
+print(round(height/number_of_students))
 
 
 
